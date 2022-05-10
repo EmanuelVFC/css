@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body p{
+            color: red;
+        }
+
+        body > p{
+            color: green;
+        }
+
+        div + p{
+            color: yellow;
+        }
+
+        div ~ span {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>OI1</p>
+    </div>
+    <p>OI2</p>
+    <p>OI3</p>
+    <span>
+        OI4
+    </span>
+</body>
+</html>
