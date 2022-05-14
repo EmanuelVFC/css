@@ -6,11 +6,24 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+
+        p{
+            background-color: aqua;
+        }
+
+        .observacao{
+            background-color: brown !important;
+        }
+
+        p.observacao{
+            background-image: linear-gradient(to right, rgb(0, 102, 255), transparent);
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-    <p class='observacao'>Olha essa observação!!!!</p>
+    <p class='observacao' id="cor">Olha essa observação!!!!</p>
 </body>
 
 </html>
